@@ -22,7 +22,23 @@ window.agregarFunkopop = function(event){
       //guardar el funko en el arreglo
       listaFunkopop.push(nuevoFunko);
       //guardar los datos en el localstorage
+      localStorage.setItem("listaFunkoKey", JSON.stringify(listaFunkopop));
+      //mostrar cartel de datos guardados
+      Swal.fire(
+        "Nuevo Funkopop",
+        "El funkopop se agrego correctamente",
+        "success"
+      );
+      //limpiar formulario
+      limpiarFormulario()
   } else {
     console.log('datos incorrectos');
   }
+}
+
+function limpiarFormulario(){
+  let formulario = document.getElementById('formProducto');
+  formulario.reset();
+  //limpiar clase form-control para sacar las tildes del form
+
 }
