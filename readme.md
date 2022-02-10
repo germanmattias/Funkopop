@@ -22,4 +22,4 @@ _Para descargar el proyecto solo clona el repositorio de github._
 
 ## Visualiza el proyecto terminado
 
-**Demo del proyecto:** //agregar link del proyecto
+[**Demo del proyecto**](https://funkopopstore.netlify.app)
